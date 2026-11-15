@@ -24,7 +24,7 @@ One code block, one entry per line:
 [2026-05-14] - Main channels: Meta Ads, TikTok Ads, Apple Search Ads.
 ```
 
-A full example is in `examples/raw/chatgpt-memory.md`.
+The user can open a full example in `examples/raw/chatgpt-memory.md`. Do not read that file yourself: `examples/` is closed for you.
 
 ## How to sort an export
 

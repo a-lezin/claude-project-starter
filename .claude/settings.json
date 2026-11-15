@@ -10,6 +10,7 @@
     ],
     "deny": [
       "Edit(/raw/**)",
+      "Read(/examples/**)",
       "Read(.env)",
       "Read(.env.*)",
       "Read(!.env.example)",

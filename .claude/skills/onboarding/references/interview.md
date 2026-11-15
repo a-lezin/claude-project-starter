@@ -9,13 +9,13 @@ Ask one question at a time. Offer 3 answers and "Skip". The answers below are hi
 | 3 | What is the main goal for the next 3 months, and how do you measure success? | Grow a metric · Launch something new · Put a process in order |
 | 4 | Who are the competitors or alternatives? Name 2–3. | Build the options from answer 1 |
 | 5 | What did you already try that did not work? | A channel or campaign · A feature or product change · A process or tool |
-| 6 | How do you want answers: format, tone, language? | Short, conclusion first · Detailed, with reasoning · Tables and lists |
 
 Follow-up, only if an answer is thin: "Can you give one number or one example?"
+
+Questions about how to answer (language, style, tone, scripts, confirmations) are not here. They are in `working-rules.md` and go to `CLAUDE.md`.
 
 ## Recording
 
 - Keep the user's own words.
 - One answer can hold several facts. Split them when you sort.
 - A skipped question produces no page and no placeholder.
-- Answer 6 is about behavior. Propose it as rules for `CLAUDE.md`, not as a wiki fact.

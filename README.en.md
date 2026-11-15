@@ -34,6 +34,23 @@ examples/              a filled example (the Spokly app, in Ukrainian); safe to 
 .env.example           template for keys
 ```
 
+## The `examples/` folder: look through it, then delete it
+
+`examples/` is a filled example for the Spokly app (in Ukrainian). It shows what the project looks like after the onboarding. The metrics in the example are simulated.
+
+| What | Where |
+|---|---|
+| Two sources: the raw product context and a memory export from ChatGPT | `examples/raw/` |
+| The knowledge base that Claude built from these sources | `examples/wiki/` |
+| Notes, and the changes that the onboarding made to `CLAUDE.md` | `examples/README.md` |
+
+What to do with it:
+
+1. Look through the example in your editor or on GitHub. Start with `examples/wiki/index.md`.
+2. Delete the `examples/` folder when you no longer need the example. The project works without it.
+
+Claude does not read this folder. A rule in `CLAUDE.md` and the `Read(/examples/**)` ban in `.claude/settings.json` keep another product out of its context. So look through the example yourself, not through Claude.
+
 ## Requirements
 
 - [Claude Code](https://code.claude.com/docs/en/overview).
@@ -78,13 +95,16 @@ Run `claude` in the `my-project` folder.
 
 In 10–15 minutes Claude:
 
-1. Asks 6 questions about the product, your role, goals, competitors and the answer format you prefer.
-2. Asks which AI tools you already use and where your information lives.
-3. Helps you bring the context in: gives a prompt for the export from ChatGPT, Gemini or claude.ai and asks you to put files into `raw/`.
-4. Shows the takeaways, the list of pages and the changes to `CLAUDE.md`. Read them and say "OK".
-5. Writes the pages to `wiki/`.
+1. Asks 5 questions about the product, your role, goals, competitors and failed attempts.
+2. Sets the working rules in `CLAUDE.md`: the language of replies and of the wiki, style and tone, the language of scripts and of their explanations, actions that always need your OK, sensitive data.
+3. Asks which AI tools you already use and where your information lives.
+4. Helps you bring the context in: gives a prompt for the export from ChatGPT, Gemini or claude.ai and asks you to put files into `raw/`.
+5. Shows the takeaways, the list of pages and the changes to `CLAUDE.md`. Read them and say "OK".
+6. Writes the pages to `wiki/` and the rules to `CLAUDE.md`.
 
-No product of your own? Copy the two files from `examples/raw/` into `raw/` and run `/onboarding` on them.
+You can change only the working rules later: `/onboarding change the working rules`.
+
+No product of your own? Make a separate copy of the project, copy the two files from `examples/raw/` into `raw/` there yourself, and run `/onboarding`.
 
 ## Daily work
 
@@ -161,7 +181,6 @@ Create an agent in this project that [what it does]. It reads data from: [where]
 
 - **Codex and other agents** read `AGENTS.md`, which points to `CLAUDE.md`.
 - **Plans** from Plan mode are saved in the `plans/` folder.
-- **`examples/`** holds a filled example. Delete the folder when you no longer need it.
 - **`CLAUDE.md`** is yours: change the rules to fit your work. Keep the file short and free of product facts.
 
 ## License

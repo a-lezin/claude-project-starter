@@ -1,22 +1,33 @@
-# Інструменти й джерела
+# Інструменти та джерела даних
 
-Summary: Де лежать дані про Spokly і як їх отримати.
+Summary: Де лежить інформація про Spokly: Google Sheets, Notion, PostHog, RevenueCat, рекламні кабінети, ChatGPT і файли на комп'ютері користувача.
 Sources: raw/chatgpt-memory.md, sources/onboarding-interview-2026-11-15.md
 Updated: 2026-11-15
 
 ---
 
+## Інструменти
+
 | Інструмент | Що містить | Як отримати дані | Джерело |
 |---|---|---|---|
-| Файли на комп'ютері | Контекст проєкту | Покласти в `raw/` | інтерв'ю |
-| ChatGPT | Пам'ять і чати | Експорт → `raw/` | інтерв'ю |
-| Google Sheets | Звіти | Експорт CSV → `raw/` | raw/chatgpt-memory.md |
-| Notion | Задачі | Експорт → `raw/` | raw/chatgpt-memory.md |
-| PostHog | Продуктова аналітика | Експорт звіту → `raw/` | raw/chatgpt-memory.md |
-| RevenueCat | Підписки | Експорт звіту → `raw/` | raw/chatgpt-memory.md |
+| Google Sheets | Звіти | У джерелах не описано | raw/chatgpt-memory.md (2026-09-30) |
+| Notion | Задачі | У джерелах не описано | raw/chatgpt-memory.md (2026-09-30) |
+| PostHog | Продуктова аналітика | У джерелах не описано | raw/chatgpt-memory.md (2026-09-30) |
+| RevenueCat | Підписки застосунку | У джерелах не описано | raw/chatgpt-memory.md (2026-05-14) |
+| Meta Ads, TikTok Ads, Apple Search Ads | Основні рекламні канали | У джерелах не описано | raw/chatgpt-memory.md (2026-05-14) |
+| ChatGPT | Пам'ять асистента. Експорт уже в `raw/chatgpt-memory.md` | Експорт зроблено | sources/onboarding-interview-2026-11-15.md |
+| Файли на цьому комп'ютері | `raw/context_raw.md`, `raw/chatgpt-memory.md` | Користувач кладе файли в `raw/` | sources/onboarding-interview-2026-11-15.md |
 
-Колонка «Як отримати дані» — пропозиція, не факт з джерела (needs verification).
+## Що вже у wiki
+
+- `raw/context_raw.md` → [context-raw](sources/context-raw.md).
+- `raw/chatgpt-memory.md` → [chatgpt-memory](sources/chatgpt-memory.md).
+
+## Що ще не зібрано
+
+- Звіти з Google Sheets, задачі з Notion, аналітика PostHog, дані RevenueCat і рекламних кабінетів. Щоб додати: експортуй файл у `raw/` і скажи `ingest raw/<файл>` (source: sources/onboarding-interview-2026-11-15.md, Pending sources).
+- Сайту немає (source: sources/onboarding-interview-2026-11-15.md).
 
 ## Related pages
 
-- [Команда](team.md) · [Інтерв'ю](sources/onboarding-interview-2026-11-15.md)
+- [Огляд](overview.md) · [Канали залучення](channels.md) · [Продукт](product.md) · [Команда](team.md)
