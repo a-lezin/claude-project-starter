@@ -106,7 +106,7 @@ The project has four safeguards. They need no setup.
 | Safeguard | What it does |
 |---|---|
 | Permissions in `.claude/settings.json` | Forbid Claude to change `raw/` and to read `.env`, key files and the `secrets/` folder |
-| Hook `protect-files.sh` | Repeats these bans and explains the reason to Claude |
+| Hook `protect-files.sh` | A second line for the same bans: it still works if someone removes the permission rule |
 | Hook `block-dangerous.sh` | Blocks dangerous commands: `rm -rf` on `/`, `~`, `..`, `.git`; `git push --force`; `git reset --hard`; `git clean -f`; `chmod 777`; changes to `raw/` from the terminal; showing or sending secrets |
 | Hook `check-large-files.sh` | Stops files over 10 MB before `git add` and `git commit` |
 
