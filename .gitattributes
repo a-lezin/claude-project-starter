@@ -1,0 +1,3 @@
+# Hook scripts must keep Unix line endings on every computer.
+# With Windows line endings bash fails and Claude Code blocks every action.
+*.sh text eol=lf

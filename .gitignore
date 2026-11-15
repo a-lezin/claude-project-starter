@@ -1,0 +1,57 @@
+# ---------- OS files ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Claude Code: personal files of one computer ----------
+.claude/settings.local.json
+CLAUDE.local.md
+
+# ---------- Secrets: never publish (real keys live only in .env) ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+credentials.json
+client_secret*.json
+service-account*.json
+token.json
+secrets/
+
+# ---------- Heavy media and archives: keep them on disk or Google Drive ----------
+# Images (*.png, *.jpg) are NOT ignored on purpose: html one-pagers embed them.
+# Anything else over 10 MB is stopped by .claude/hooks/check-large-files.sh
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.mp3
+*.wav
+*.m4a
+*.zip
+*.rar
+*.7z
+
+# ---------- Generated PDFs (PDF sources in raw/ stay in git) ----------
+artifacts/**/*.pdf
+
+# ---------- Dependencies and caches ----------
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ---------- Obsidian: personal window layout, settings and plugins ----------
+.obsidian/
+.trash/
+
+# ---------- Logs and temporary files ----------
+*.log
+*.tmp
+~$*

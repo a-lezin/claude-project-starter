@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "sviy-laws": {
+      "type": "http",
+      "url": "https://mcp.sviy.ai/zakon"
+    }
+  }
+}
